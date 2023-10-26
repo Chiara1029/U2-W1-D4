@@ -27,6 +27,7 @@ p{
     flex-direction: column;
     justify-content: center;
     box-shadow: 5px 3px 11px 0px rgba(0, 0, 0, 0.37) ;
+    animation: slap-in 1s;
 }
 .task2, .task4, .task8{
     width: 250px;
@@ -37,6 +38,7 @@ p{
     flex-direction: column;
     justify-content: center;
     box-shadow: 5px 3px 11px 0px rgba(0, 0, 0, 0.37) ;
+    animation: slap-in 1s;
 }
 .task3, .task6{
     width: 250px;
@@ -47,6 +49,7 @@ p{
     flex-direction: column;
     justify-content: center;
     box-shadow: 5px 3px 11px 0px rgba(0, 0, 0, 0.37) ;
+    animation: slap-in 1s;
 }
 .postit-first-row, .postit-second-row{
     width: 100%;
@@ -95,3 +98,27 @@ p{
     transform: scale(1.2); 
     box-shadow: 5px 3px 11px 0px black ;
 }
+@keyframes slap-in {
+    0% {
+      opacity: 0;
+      transform: scale(10);
+    }
+    50% {
+      opacity: 0;
+      transform: scale(10);
+    }
+  
+    55% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  
+    65% {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+    70% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
