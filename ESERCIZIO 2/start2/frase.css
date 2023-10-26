@@ -26,10 +26,9 @@ i{
 
 .parole {
   display: block;
-  animation: 2s anim-parole ease-out infinite;
+  animation: 2s parole ease-out infinite;
 }
-
-@keyframes anim-parole {
+@keyframes parole {
   0% {
     opacity: 0;
     transform: translateY(80%);
