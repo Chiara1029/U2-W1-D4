@@ -1,0 +1,97 @@
+body{
+    font-family: 'Indie Flower'
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*POST-IT*/
+.postit-container{
+    width: 100%;
+    height: 650px;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.task1, .task5, .task7{
+    width: 250px;
+    height: 200px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.096) 3%, palegoldenrod 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 3px 11px 0px rgba(0, 0, 0, 0.37) ;
+}
+.task2, .task4, .task8{
+    width: 250px;
+    height: 200px;
+    background-color: palegreen;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.096) 3%, palegreen 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 3px 11px 0px rgba(0, 0, 0, 0.37) ;
+}
+.task3, .task6{
+    width: 250px;
+    height: 200px;
+    background-color: paleturquoise;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.096) 3%, paleturquoise 40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 3px 11px 0px rgba(0, 0, 0, 0.37) ;
+}
+.postit-first-row, .postit-second-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*ROTATION*/
+.task1{
+    rotate: -6deg;
+    transition: all .2s ease-in-out; 
+}
+.task2{
+    rotate: 6deg;
+    transition: all .2s ease-in-out; 
+}
+.task3{
+    rotate: -8deg;
+    transition: all .2s ease-in-out; 
+}
+.task4{
+    rotate: 8deg;
+    transition: all .2s ease-in-out; 
+}
+.task5{
+    rotate: -3deg;
+    transition: all .2s ease-in-out; 
+}
+.task6{
+    rotate: -5deg;
+    transition: all .2s ease-in-out; 
+}
+.task7{
+    rotate: -4deg;
+    transition: all .2s ease-in-out; 
+}
+.task8{
+    rotate: 5deg;
+    transition: all .2s ease-in-out; 
+}
+
+/*ANIMATION*/
+.task1:hover, .task2:hover, .task3:hover, .task4:hover, .task5:hover, .task6:hover, .task7:hover, .task8:hover{
+    rotate: 0deg;
+    transform: scale(1.2); 
+    box-shadow: 5px 3px 11px 0px black ;
+}
